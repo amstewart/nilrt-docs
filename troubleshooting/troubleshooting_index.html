@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>NI Linux Real-Time Debug Documentation &#8212; nilrt-docs 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d75fae25" />
+    <link rel="stylesheet" type="text/css" href="../_static/bizstyle.css?v=5283bb3d" />
+    
+    <script src="../_static/documentation_options.js?v=a681ed88"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Logs on NI Linux Real-Time Systems" href="logs.html" />
+    <link rel="prev" title="NI Linux Real-Time and Docker" href="../docker/docker.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="logs.html" title="Logs on NI Linux Real-Time Systems"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../docker/docker.html" title="NI Linux Real-Time and Docker"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">nilrt-docs 1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">NI Linux Real-Time Debug Documentation</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ni-linux-real-time-debug-documentation">
+<h1>NI Linux Real-Time Debug Documentation<a class="headerlink" href="#ni-linux-real-time-debug-documentation" title="Link to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="logs.html">Logs on NI Linux Real-Time Systems</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="logs.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logs.html#useful-ni-linux-real-time-logs">Useful NI Linux Real-Time Logs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logs.html#logrotate">Logrotate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logs.html#logging-to-the-system-log-s">Logging to the System Log(s)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logs.html#persistent-logs">Persistent Logs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lvrt-crash-dumps.html">LabVIEW Core Dumps on Linux Real-Time</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lvrt-crash-dumps.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lvrt-crash-dumps.html#generating-a-core-dump">Generating a Core Dump</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pstore.html">Obtaining Kernel Logs from a Prior System Crash Via pstore</a></li>
+<li class="toctree-l1"><a class="reference internal" href="technicalreport.html">Technical Support Report</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="technicalreport.html#additional-information-and-resources">Additional information and resources</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tracing.html">Tracing on NI Linux Real-Time</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tracing.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tracing.html#ftrace">ftrace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tracing.html#extract-the-trace">Extract the trace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tracing.html#analyze-the-results">Analyze the results</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tracing.html#additional-information-and-resources">Additional information and resources</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="../docker/docker.html"
+                          title="previous chapter">NI Linux Real-Time and Docker</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="logs.html"
+                          title="next chapter">Logs on NI Linux Real-Time Systems</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>GitHub Source</h3>
+    <ul class="this-page-menu">
+      <li><a href="https://github.com/ni/nilrt-docs/"
+            rel="nofollow">Source on GitHub</a></li>
+      <li><a href="https://github.com/ni/nilrt-docs/blob/main/docs/source/troubleshooting/troubleshooting_index.rst"
+            rel="nofollow">Show Document Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="logs.html" title="Logs on NI Linux Real-Time Systems"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../docker/docker.html" title="NI Linux Real-Time and Docker"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">nilrt-docs 1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">NI Linux Real-Time Debug Documentation</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright NI.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    </div>
+  </body>
+</html>
